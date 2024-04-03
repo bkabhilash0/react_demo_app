@@ -4,6 +4,7 @@ export const useStore = create((set) => ({
   todos: [],
   addTodo: (todo) =>
     set((state) => ({
-      todos: [...state.todos,todo]
+      todos: [...state.todos, todo],
     })),
+  resetTodo: () => set({ todos: [] }),
 }));
